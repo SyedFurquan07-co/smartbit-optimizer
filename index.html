@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smartbit Optimizer</title>
+    <!-- Tailwind CSS CDN & Theme Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              app: {
+                bg: '#0B0D14',
+                surface: '#10131C',
+                card: '#151823',
+                elevated: '#1B1F2C',
+                border: 'rgba(255, 255, 255, 0.08)',
+                borderHover: 'rgba(255, 255, 255, 0.16)',
+              },
+              brand: {
+                primary: '#8B5CF6',
+                hover: '#A78BFA',
+                light: '#DDD6FE',
+                muted: 'rgba(139, 92, 246, 0.15)',
+              },
+              darktext: {
+                primary: '#F8FAFC',
+                secondary: '#A7ADBD',
+                muted: '#64748B',
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <!-- jsPDF CDN for client-side PDF generation -->
+    <script src="https://unpkg.com/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

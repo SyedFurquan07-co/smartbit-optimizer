@@ -1,0 +1,5 @@
+{
+  "name": "Smartbit Optimizer",
+  "description": "A clean, modern web app for Smartbit Optimizer, featuring a streamlined homepage, authentication, a lightweight dashboard, a proposal generator, a proposal history view, and a proposal details page.",
+  "requestFramePermissions": []
+}
